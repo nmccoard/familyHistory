@@ -13,4 +13,5 @@ function changePage(e, classToken) {
    }
    
    e.currentTarget.classList.add("active");
+   //test
 }

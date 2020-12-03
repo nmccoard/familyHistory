@@ -31,8 +31,8 @@ function sendEmail(name, emailBody) {
          Subject: `Add a brick for ${name}`,
          Body: emailBody,
       })
-      .then(function (message) {
-         alert("Message sent successfully")
+      .then( () => {
+         alert("Thanks you! Your form was successfully sent.")
       });
 }
 

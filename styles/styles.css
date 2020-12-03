@@ -227,7 +227,7 @@
 .addBrick {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: 165px 1fr;
   grid-template-areas: "title title"
     "brick lego";
 }
@@ -265,6 +265,16 @@ select,
   width: 50%;
   min-width: 250px;
 }
+
+input:invalid {
+  background-color: rgba(184, 37, 37, 0.77);
+}
+
+
+select:invalid {
+  background-color: rgba(184, 37, 37, 0.77);
+}
+
 
 input[type=submit] {
   background-color: #4CAF50;
@@ -325,6 +335,7 @@ footer {
 }
 
 @media only screen and (max-width:1160px) {
+
   /* For Smaller Screens */
   .home {
     grid-template-columns: 1fr;
@@ -382,10 +393,10 @@ footer {
   .addBrick {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "title" "brick" "lego";
+    grid-template-areas: "title""brick""lego";
   }
 
-  .addBrick .title h1{
+  .addBrick .title h1 {
     font-size: 44px;
   }
 
@@ -397,13 +408,16 @@ footer {
     padding: 50px;
   }
 
-  .addBrick #legoPic img{
-      padding: 20px;
-      width: 100%;
+  .addBrick #legoPic img {
+    padding: 20px;
+    width: 100%;
   }
 
-  .addBrick #brickForm input[type=text], input[type=number], select, #comment {
-  width: 60%;
+  .addBrick #brickForm input[type=text],
+  input[type=number],
+  select,
+  #comment {
+    width: 60%;
   }
 }
 
@@ -448,7 +462,7 @@ footer {
     line-height: 1.3;
   }
 
-  .addBrick .title h1{
+  .addBrick .title h1 {
     font-size: 34px;
   }
 
@@ -460,8 +474,11 @@ footer {
     padding: 20px;
   }
 
-  .addBrick #brickForm input[type=text], input[type=number], select, #comment {
-  width: 100%;
+  .addBrick #brickForm input[type=text],
+  input[type=number],
+  select,
+  #comment {
+    width: 100%;
   }
 }
 

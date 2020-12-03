@@ -161,7 +161,7 @@
                <label for="chooseActivity">Choose an Activity:</label>
                <br>
                <select id="chooseActivity" name="chooseActivity" required>
-                  <option disabled selected hidden>"Choose one..."</option>
+                  <option value="" disabled selected hidden>"Choose one..."</option>
                   <option value="Submitted a name">Submitted a name on FamilySearch</option>
                   <option value="Family Tradition">Family Tradition</option>
                   <option value="Indexing">Indexing</option>
@@ -176,15 +176,14 @@
                <br><br>
                <label for="numPeople">How many people participated:</label>
                <br>
-               <input type="number" min="1" max="10" placeholder="1" required>
+               <input type="number" id="numPeople" min="1" max="10" placeholder="0" required>
                <br><br>
                <label for="comment">Comments:</label>
                <br>
                <textarea name="comment" id="comment" style="height:300px;"
-                  placeholder='Add any comment here. If you selected "Other" above, please let us know what activity you did here.'>
-               </textarea>
+                  placeholder='Add any comment here. If you selected "Other" above, please let us know what activity you did here.'></textarea>
                <br>
-               <input type="submit">
+               <input type="submit" id="submitBtn"> <span class="note"> *Red = Required</span> 
             </form>
          </div>
          <div id="legoPic">
@@ -202,6 +201,7 @@
       <p class="footer">This is not an official website of the Church of Jesus Christ of Latter-day Saints</p>
    </footer>
 
+   <script src= "https://smtpjs.com/v3/smtp.js"></script>
    <script src="js/main.js"></script>
 </body>
 

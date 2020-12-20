@@ -3,6 +3,7 @@ const formName = document.querySelector("#inputName");
 const formActivity = document.querySelector("#chooseActivity");
 const formNum = document.querySelector("#numPeople");
 const formComment = document.querySelector("#comment");
+showProgress();
 
 function changePage(e, classToken) {
    document.querySelector(".home").classList.add("hidden");
@@ -68,3 +69,15 @@ submitBtn.addEventListener('click', (e) => {
       formComment.value = "";
    }
 });
+
+function progressCalculator(){
+   const numBricks = 4;
+   let progressPer = Math.round((numBricks / 1086) * 1000)/10;
+   console.log(progressPer.toFixed(1));
+   return progressPer.toFixed(1);
+}
+
+function showProgress(){
+   const percentage = document.querySelector('#percentage');
+   percentage.innerHTML = `${progressCalculator()}%`
+}

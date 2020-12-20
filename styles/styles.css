@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/* Add a black background color to the top navigation */
+/* Add a background color to the top navigation */
 .nav {
   background-color: rgb(82, 82, 82);
   overflow: hidden;
@@ -296,11 +296,12 @@ input[type=submit]:hover {
 }
 
 .progress {
+  background-color: rgba(51, 51, 51, .35);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 1fr;
-  grid-template-areas: "title title"
-    "area1 area2";
+  grid-template-areas: "title title title"
+    "area1 area1 area2";
 }
 
 .progress .title {
@@ -320,6 +321,20 @@ input[type=submit]:hover {
 
 .progress #area2 {
   grid-area: area2;
+  padding: 45px;
+  color: #264653;
+  font-family: 'Bitter', serif;
+}
+
+.progress #area2 h3{
+  font-size: 28px;
+  text-align: center;
+}
+
+.progress #area2 p{
+  padding-top: 10px;
+  font-size: 19px;
+  text-align: right;
 }
 
 footer {
@@ -419,13 +434,30 @@ footer {
   #comment {
     width: 60%;
   }
+
+  .progress .title {
+    font-size: 22px;
+    padding: 10px;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width:620px) {
 
   /* For mobile phones: */
+
+
   .tabLinks {
     width: 100%;
+    display: none;
+  }  
+
+  .active {
+    display: block;
+  }
+  
+  .nav:hover .tabLinks {
+    display: block;
   }
 
   .home .title {
@@ -478,6 +510,19 @@ footer {
   input[type=number],
   select,
   #comment {
+    width: 100%;
+  }
+
+  .progress {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "title"
+      "area1" "area2";
+  }
+
+  .progress .title {
+    font-size: 18px;
+    padding: 10px;
     width: 100%;
   }
 }

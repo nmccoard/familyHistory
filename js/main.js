@@ -5,6 +5,7 @@ const formNum = document.querySelector("#numPeople");
 const formComment = document.querySelector("#comment");
 showProgress();
 
+//Testing github connection
 function changePage(e, classToken) {
    document.querySelector(".home").classList.add("hidden");
    document.querySelector(".howTo").classList.add("hidden");

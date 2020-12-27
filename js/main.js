@@ -72,7 +72,7 @@ submitBtn.addEventListener('click', (e) => {
 });
 
 function progressCalculator(){
-   const numBricks = 4;
+   const numBricks = 4 + 5;
    let progressPer = Math.round((numBricks / 1086) * 1000)/10;
    console.log(progressPer.toFixed(1));
    return progressPer.toFixed(1);

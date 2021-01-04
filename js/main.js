@@ -35,10 +35,10 @@ function sendEmail(name, emailBody) {
       })
       .then(message => {
          if(message === "ok" || message === "OK"){
-            alert("Thank You! Your form was successfully sent.");
+            alert("Thank You! Your form was successfully submitted.");
          } else {
             console.log(message);
-            alert("ahh...Something didn't work. Please try again.")
+            alert("ahh...Something didn't work. Please try again.");
          }
       });
 }
@@ -72,7 +72,8 @@ submitBtn.addEventListener('click', (e) => {
 });
 
 function progressCalculator(){
-   const numBricks = 4 + 5;
+   // add a + and the number of bricks earned for each week to the line below
+   const numBricks = 4 + 5 + 2;
    let progressPer = Math.round((numBricks / 1086) * 1000)/10;
    console.log(progressPer.toFixed(1));
    return progressPer.toFixed(1);

@@ -344,8 +344,7 @@ input[type=submit]:hover {
 .topContrib {
   list-style-type: none;
   padding-top: 10px;
-  list-style-position: outside;
-  text-align: center;
+  margin-left: 30%;
   line-height: 1.4;
 }
 

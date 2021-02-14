@@ -341,6 +341,12 @@ input[type=submit]:hover {
   text-align: right;
 }
 
+.topContrib {
+  padding-top: 10px;
+  margin-left: 40px;
+  line-height: 1.4;
+}
+
 footer {
   text-align: center;
   font-family: 'Hind Siliguri', sans-serif;

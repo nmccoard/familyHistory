@@ -73,7 +73,7 @@ submitBtn.addEventListener('click', (e) => {
 
 function progressCalculator(){
    // add a + and the number of bricks earned for each week to the line below
-   const numBricks = 4 + 5 + 2 + 7 + 3 + 5 + 2 + 73 + 45 + 3 + 42 + 39 + 12 + 8 + 48 + 5 + 5 + 14 + 12 + 40 + 36;
+   const numBricks = 4 + 5 + 2 + 7 + 3 + 5 + 2 + 73 + 45 + 3 + 42 + 39 + 12 + 8 + 48 + 5 + 5 + 14 + 12 + 9 + 40 + 36;
    let progressPer = Math.round((numBricks / 1086) * 1000)/10;
    console.log(numBricks);
    console.log(progressPer.toFixed(1)); 

@@ -24,8 +24,8 @@ function changePage(e, classToken) {
 }
 
 function sendEmail(name, emailBody) {
-   console.log(message);
-      alert("ahh...Something didn't work. Please send and email to nmccoard@gmail.com to let us know.");
+   console.log(name + " " + emailBody);
+   alert("ahh...Something didn't work. Please send and email to nmccoard@gmail.com to let us know.");
 }
 
 submitBtn.addEventListener('click', (e) => {

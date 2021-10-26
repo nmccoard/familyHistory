@@ -24,23 +24,8 @@ function changePage(e, classToken) {
 }
 
 function sendEmail(name, emailBody) {
-   Email.send({
-         Host: "smtp.mail.com",
-         Username: "KirtlandFamilyHistory@mail.com",
-         Password: "z#HW2a-_.HAm.vS",
-         To: 'KirtlandFamilyHistory@mail.com',
-         From: "KirtlandFamilyHistory@mail.com",
-         Subject: `Add a brick for ${name}`,
-         Body: emailBody,
-      })
-      .then(message => {
-         if(message === "ok" || message === "OK"){
-            alert("Thank You! Your form was successfully submitted.");
-         } else {
-            console.log(message);
-            alert("ahh...Something didn't work. Please try again.");
-         }
-      });
+   console.log(message);
+      alert("ahh...Something didn't work. Please send and email to nmccoard@gmail.com to let us know.");
 }
 
 submitBtn.addEventListener('click', (e) => {
